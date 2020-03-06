@@ -20,8 +20,25 @@ The project clones the functionalities of Kafka
 + Download Kafka source code : `git clone https://github.com/<your github id>/kafka.git`
 + Build Kafka source code 
 + Run Zookeeper
-+ Test Kafka set up 
-    + 
++ Testing Kafka setup
+Create a new topic named “test” with a single partition and only one replica:
+
+> bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+We can now see that topic if we run the list topic command:
+
+> bin/kafka-topics.sh --list --zookeeper localhost:2181
+test
+Run the producer and then type a few messages into the console to send to the server.
+
+> bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+This is a message
+This is another message
+Kafka also has a command line consumer that will dump out messages to standard output.
+
+> bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+This is a message
+This is another message
+If you have each of the above commands running in a different terminal then you should now be able to type messages into the producer terminal and see them appear in the consumer terminal.
 
 ##  
 
