@@ -1,4 +1,31 @@
-# Distributed-system-project
+# Distributed-system-project : `Kafki` 
+Kafka distributed streaming platform clone 
+
+## Project description 
+The project clones the functionalities of Kafka 
++ Publish and subcribe to streams of records, similar to message queue
++ Store streams of records in a fault tolerant way 
++ Process streams of records 
++ APIs : Producer, Consumer, Streams, Connector 
+
+## Run the project 
+
+
+## Install necessary softwares 
++ Java 8 
++ Maven / Gradle
+
+
+## Install Kafka source code 
++ Download Kafka source code : `git clone https://github.com/<your github id>/kafka.git`
++ Build Kafka source code 
++ Run Zookeeper
++ Test Kafka set up 
+    + 
+
+##  
+
+
 
 
 
