@@ -35,22 +35,8 @@ dependencies {
 
 	// spring
 	compile("org.springframework.boot:spring-boot-starter-web") {
-		exclude module: 'logback-classic'
-		exclude module: 'log4j-over-slf4j'
-		exclude module: 'spring-boot-starter-tomcat'
 	}
 	compile 'org.springframework.cloud:spring-cloud-starter-hystrix:1.4.5.RELEASE'
-	compile "org.springframework.boot:spring-boot-starter-jetty"
-
-	// oauth
-	compile('org.springframework.security.oauth:spring-security-oauth2:2.3.5.RELEASE') {
-		exclude module: 'spring-beans'
-		exclude module: 'spring-core'
-		exclude module: 'spring-context'
-	}
-	compile('org.springframework.boot:spring-boot-starter-security') {
-		exclude module: "logback-classic"
-	}
 
 
 	compile 'com.google.guava:guava:27.1-jre'
@@ -67,11 +53,8 @@ dependencies {
 	compile "com.fasterxml.jackson.datatype:jackson-datatype-joda:$jacksonVersion"
 	compile "com.fasterxml.jackson.module:jackson-module-afterburner:$jacksonVersion"
 	compile "com.fasterxml.jackson.module:jackson-module-scala_2.12:$jacksonVersion"
-	compile 'org.zalando:jackson-datatype-problem:0.22.0'
-	compile 'org.zalando:problem:0.22.0'
 	compile 'org.json:json:20180130'
 
-	compile 'org.slf4j:slf4j-log4j12'
 
 	// open tracing
 	compile 'io.opentracing:opentracing-api:0.31.0'
@@ -108,7 +91,27 @@ dependencies {
 	testCompile "org.springframework:spring-test"
 	testCompile 'org.springframework.boot:spring-boot-test'
 	testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'io.projectreactor:reactor-core:3.3.3.RELEASE'
+	implementation 'org.slf4j:slf4j-api:1.7.30'
+	implementation 'com.github.ben-manes.caffeine:caffeine:2.6.2'
+
+
+	testImplementation 'junit:junit:4.13'
+	testImplementation 'org.assertj:assertj-core:3.15.0'
+	testImplementation 'org.awaitility:awaitility:4.0.2'
+	testImplementation 'io.projectreactor:reactor-test:3.3.3.RELEASE'
+	testImplementation 'com.devskiller:jfairy:0.6.3'
+	testImplementation 'org.mockito:mockito-core:3.3.0'
 //	testCompile project(path: ':core-common', configuration: 'testOutput')
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
+	implementation 'org.testcontainers:testcontainers:1.13.0'
+	implementation 'com.rometools:rome-opml:1.12.2'
+	implementation 'com.google.guava:guava:28.2-jre'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 // end::dependencies[]
 

@@ -1,0 +1,7 @@
+logging.level:
+  org.springframework.web: INFO
+  reactor.netty: INFO
+
+emoji-tracker.url: http://emojitrack-gostreamer.herokuapp.com/subscribe/eps
+server:
+  port: 8082

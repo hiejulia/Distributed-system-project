@@ -1,12 +1,12 @@
 # Distributed-system-project : `Kafki` 
-Kafka distributed streaming platform clone 
 
 ## Project description 
-The project clones the functionalities of Kafka 
+Distributed logging, messaging and data connector cluster on top of Kafka 
 + Publish and subcribe to streams of records, similar to message queue
 + Store streams of records in a fault tolerant way 
 + Process streams of records 
 + APIs : Producer, Consumer, Streams, Connector 
++ Migrate data sources built on top of Kafka 
 
 ## Run the project 
 
