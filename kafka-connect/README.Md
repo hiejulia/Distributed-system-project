@@ -19,3 +19,4 @@
 + configuration 
 + easy to scale, fault tolerant - rebalancing in case a worker dies 
 + production deployment of connectors 
++ logs : 127.0.0.1:3030/logs/ - `connect-distributed.log`
