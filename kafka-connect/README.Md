@@ -14,3 +14,8 @@
 
 + view kafka connect logs 
 
+# Kafka connect run in Distributed mode 
++ Multiple workers run connectors and tasks 
++ configuration 
++ easy to scale, fault tolerant - rebalancing in case a worker dies 
++ production deployment of connectors 

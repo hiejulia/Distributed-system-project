@@ -33,16 +33,16 @@ services:
       - 5432:5432                 # Postgres port
 
   # Cassandra 
-  cassandra:
-    image: 'bitnami/cassandra:3'
-    ports:
-      - '7000:7000'
-      - '9042:9042'
-    volumes:
-      - 'cassandra_data:/bitnami'
-    environment:
-      - CASSANDRA_SEEDS=cassandra
-      - CASSANDRA_PASSWORD_SEEDER=yes
-      - CASSANDRA_PASSWORD=cassandra
+  # cassandra:
+  #   image: 'bitnami/cassandra:3'
+  #   ports:
+  #     - '7000:7000'
+  #     - '9042:9042'
+  #   volumes:
+  #     - 'cassandra_data:/bitnami'
+  #   environment:
+  #     - CASSANDRA_SEEDS=cassandra
+  #     - CASSANDRA_PASSWORD_SEEDER=yes
+  #     - CASSANDRA_PASSWORD=cassandra
 
 
