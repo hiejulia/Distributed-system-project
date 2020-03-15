@@ -1,0 +1,8 @@
+{
+    "query":{
+      "term" : {
+        "is_retweet" : true
+          }
+    }
+  }
+  
