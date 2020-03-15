@@ -20,3 +20,36 @@
 + easy to scale, fault tolerant - rebalancing in case a worker dies 
 + production deployment of connectors 
 + logs : 127.0.0.1:3030/logs/ - `connect-distributed.log`
+
+
+# kafka for development: fast-data-dev 
++ kafka 
++ zookeeper 
++ schema registry 
++ kafka connect 
++ landoop tools 
++ run on cloud: 
+    + run kafka instance GCE - AWS 
+    + start VM - open firewall 
+    + Once the firewall is open try:
+
+docker run -d --net=host -e ADV_HOST=[VM_EXTERNAL_IP] \
+           -e RUNNING_SAMPLEDATA=1 lensesio/fast-data-dev
+Alternatively just export the ports you need. E.g:
+
+docker run -d -p 2181:2181 -p 3030:3030 -p 8081-8083:8081-8083 \
+           -p 9581-9585:9581-9585 -p 9092:9092 -e ADV_HOST=[VM_EXTERNAL_IP] \
+           -e RUNNING_SAMPLEDATA=1 lensesio/fast-data-dev
+    
+    
++ config kafka component 
+    + broker, schema registry, connect, rest proxy 
++ production 
+    + enable SSL on broker 
+    + advanced connector settings 
+        + enable additional connectors 
+        + explicitly disable connectors 
+        + explicitly enable connectors
+        + kafka connect clusters 
+        + jmx metrics 
+        + jconsole metrics 
