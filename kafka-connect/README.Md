@@ -53,3 +53,12 @@ docker run -d -p 2181:2181 -p 3030:3030 -p 8081-8083:8081-8083 \
         + kafka connect clusters 
         + jmx metrics 
         + jconsole metrics 
+
+
+# Set up Kafka in production 
++ Set up Kafka Connect in Production 
+    + download kafka binaries 
+    + set up connect-distributed.properties 
+    + jars 
+    + launch kafka connect 
+    + rest api - kafka connect 
