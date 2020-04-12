@@ -164,3 +164,8 @@ If you have each of the above commands running in a different terminal then you 
 + Security in distributed environment
 +
 
+## TODO 
+- DB update -> Kafka connect with Debezium 
+- Distributed kafka connect
+- Cloud native Kafka architecture
+- Kafka with Schema registry 
