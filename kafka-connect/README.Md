@@ -1,3 +1,9 @@
+---
+noteId: "3ee264a07bdb11eabcc6e502098d65e3"
+tags: []
+
+---
+
 + Kafka connect source API 
     + data from file into kafka topic 
     + get data remotely into kafka topic 

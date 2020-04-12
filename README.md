@@ -7,13 +7,20 @@ Distributed logging, messaging and data connector cluster on top of Kafka
 + Process streams of records 
 + APIs : Producer, Consumer, Streams, Connector 
 + Migrate data sources built on top of Kafka 
-
+- Cloud native kafka 
 ## Run the project 
 
 
 ## Install necessary softwares 
 + Java 8 
 + Maven / Gradle
+- kafka
+    - stream API 
+    - connect
+- Flink
+- microservices
+- large scale event processing 
+
 
 
 ## Install Kafka source code 
@@ -40,7 +47,7 @@ This is a message
 This is another message
 If you have each of the above commands running in a different terminal then you should now be able to type messages into the producer terminal and see them appear in the consumer terminal.
 
-##  
+## Cloud native Kafka 
 
 
 
