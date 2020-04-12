@@ -10,18 +10,33 @@ Distributed logging, messaging and data connector cluster on top of Kafka
 - Cloud native kafka 
 ## Run the project 
 
+<a href="https://imgur.com/p71IZ7z"><img src="https://i.imgur.com/p71IZ7z.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/GMbKxSm"><img src="https://i.imgur.com/GMbKxSm.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/l1CBSvp"><img src="https://i.imgur.com/l1CBSvp.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/kJmdit4"><img src="https://i.imgur.com/kJmdit4.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/I8xkmGb"><img src="https://i.imgur.com/I8xkmGb.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/mxxCI5I"><img src="https://i.imgur.com/mxxCI5I.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/ZSKrAOr"><img src="https://i.imgur.com/ZSKrAOr.png" title="source: imgur.com" /></a>
+
 
 ## Install necessary softwares 
 + Java 8 
 + Maven / Gradle
 - kafka
     - stream API 
+        - Changelog topic 
+        - event schema
+    - aggregate
     - connect
+        - transfer,sync data from DB -> ElasticSearch, HDFS,etc with Kafka 
+    - orchestration vs choreography 
 - Flink
 - microservices
 - large scale event processing 
+- Apache Airflow 
+- DB : RockDB 
 
-
+<a href="https://imgur.com/Iz3fCSs"><img src="https://i.imgur.com/Iz3fCSs.png" title="source: imgur.com" /></a>
 
 ## Install Kafka source code 
 + Download Kafka source code : `git clone https://github.com/<your github id>/kafka.git`
